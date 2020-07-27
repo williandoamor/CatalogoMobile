@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparente"
+    tools:context=".views.ContainerViewAlbum">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main_album"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <com.jess.ui.TwoWayGridView.TwoWayGridView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#FFC4C4C4"
+        app:cacheColorHint="#E8E8E8"
+        app:gravity="center"
+        app:horizontalSpacing="0dp"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="horizontal"
+        app:stretchMode="none"
+        app:verticalSpacing="-4dp" />
+
+
+    <include
+        android:id="@+id/inc_tb_bottom_album"
+        layout="@layout/toolbar_bottom" />
+
+
+</RelativeLayout>
+

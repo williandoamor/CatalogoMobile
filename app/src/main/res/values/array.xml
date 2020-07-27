@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Array para o context menu da tela de pedidos -->
+    <string-array name="menu_pedido">
+        <item>Produtos</item>
+        <item>+Info</item>
+        <item>Salvar</item>
+        <item>Detalhes</item>
+    </string-array>
+
+    <!-- Array para o context menu da lista de produtos -->
+    <string-array name="menu_produto">
+        <item>Lançar novo Pedido de Venda</item>
+        <item>Consultar Tabela de Preço 2</item>
+    </string-array>
+
+    <!-- Array para preencher o spinner tela de cadastro faturamento -->
+    <string-array name="tabelaPrecos">
+        <item>TABELA 1</item>
+        <item>TABELA 2</item>
+    </string-array>
+    <!-- Array para preencher o spinner de formacao de preco -->
+    <string-array name="casadecformacaoPreco">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+
+    <!-- Array para preencher o spinner de formacao de quantidade de venda -->
+    <string-array name="casadecQtde">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+
+    <!-- Array para visualizacao de imagens -->
+    <string-array name="vizualizarimagem">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="tipovisualizacao">
+
+        <item>Linear</item>
+        <item>Álbum</item>
+
+    </string-array>
+
+</resources>

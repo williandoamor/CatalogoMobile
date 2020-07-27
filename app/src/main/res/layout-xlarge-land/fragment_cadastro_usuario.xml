@@ -1,0 +1,261 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/branco"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ContainerUsuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutNomeUser"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <!--TextView Nome do Usuario -->
+
+                <TextView
+                    android:id="@+id/tvNomeUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nome_usuario"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!--EditTExt Nome do Usuario -->
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtNomeUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    app:met_baseColor="@android:color/black"
+                    app:met_maxCharacters="50"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutDataCadUser"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <!--TextView Login do Usuario-->
+                <TextView
+                    android:id="@+id/tvDataCadUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dataCadUser"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!--EditTExt Data do Cadastro do Usuario -->
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtDataCadUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    app:met_baseColor="@android:color/black"
+                    app:met_maxCharacters="10"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutLoginUser"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+                <!--TextView senha do Usuario-->
+                <TextView
+                    android:id="@+id/tvLoginUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loginUser"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!--EditTExt Login do Usuario -->
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtLoginUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    app:met_baseColor="@android:color/black"
+                    app:met_maxCharacters="10"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutSenhaUser"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <!--EditTExt Senha do Usuario -->
+                <TextView
+                    android:id="@+id/tvSenhaUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/senha"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!--EditTExt Senha do Usuario -->
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtSenhaUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    app:met_baseColor="@android:color/black"
+                    app:met_maxCharacters="8"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutConfirmaSenhaUser"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <!--TextView confirma senha do Usuario-->
+                <TextView
+                    android:id="@+id/tvConfirmaSenhaUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirmaSenha"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!--EditTExt Confirma Senha do Usuario -->
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtConfirmaSenhaUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    app:met_baseColor="@android:color/black"
+                    app:met_maxCharacters="8"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--TextView Email do Usuario-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutPerfilUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <!--TextView Perfil do Usuario-->
+                <TextView
+                    android:id="@+id/tvPerfilUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/perfilUser"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!--Spinner Perfil do Usuario -->
+                <Spinner
+                    android:id="@+id/spnPerfilUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"></Spinner>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutInativaUser"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="horizontal">
+
+                <!--TextView Inativa usuario-->
+
+                <CheckBox
+                    android:id="@+id/checkBoxInativaUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/inativaUser" />
+
+                <!--CheckBox Inativa Usuario -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.loadti.catalogomobile.Fragments.FragFotoProduto">
+
+    <!-- Search Widget -->
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="0"
+        android:title="@string/action_procurar"
+        appcompat:actionViewClass="android.support.v7.widget.SearchView"
+        appcompat:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_sincronizar"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:title="Sincronizar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_configurar"
+        android:icon="@drawable/ic_settings"
+        android:title="Configurar"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/menu_cadastrar_usuario"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Cadastrar Usuário"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_cadastrar_campanha"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Cadastrar Campanha"
+        app:showAsAction="never" />
+
+
+</menu>

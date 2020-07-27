@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    tools:context="br.com.loadti.catalogomobile.views.">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:id="@+id/lay_nome_campanha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inc_tb_bottom"
+        android:layout_below="@+id/tb_main">
+
+        <TextView
+            android:id="@+id/tvNomeCampanha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edtNomeCampanha"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nome_campanha" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNomeCampanha"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:textCursorDrawable="@drawable/text_cursor"
+            app:met_maxCharacters="100"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+
+        <Button
+            android:id="@+id/btnProximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/edtNomeCampanha"
+            android:layout_below="@+id/edtNomeCampanha"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_next"
+            android:text="Próximo" />
+
+        <Button
+            android:id="@+id/btnBuscarCampanhaCadastro"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvNomeCampanha"
+            android:layout_toEndOf="@+id/edtNomeCampanha"
+            android:layout_toRightOf="@+id/edtNomeCampanha"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_buscar"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtNomeCampanha"
+            android:layout_below="@+id/edtNomeCampanha"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_back"
+            android:text="Voltar" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/inc_tb_bottom"
+        layout="@layout/toolbar_bottom" />
+
+</RelativeLayout>

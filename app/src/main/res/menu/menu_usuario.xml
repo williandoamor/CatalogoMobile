@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/pesquisar_usuario"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Cancelar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/salvar_usuario"
+        android:icon="@drawable/menu_salvar"
+        android:title="Salvar"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/cancelar_salvar_usuario"
+        android:icon="@drawable/menu_cancelar"
+        android:title="Cancelar"
+        app:showAsAction="ifRoom" />
+
+</menu>

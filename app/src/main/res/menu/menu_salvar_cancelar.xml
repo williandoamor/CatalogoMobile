@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/salvar"
+        android:icon="@drawable/menu_salvar"
+        android:title="Salvar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cancelar"
+        android:icon="@drawable/menu_cancelar"
+        android:title="Cancelar"
+        app:showAsAction="ifRoom" />
+
+</menu>

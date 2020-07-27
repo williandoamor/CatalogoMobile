@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.loadti.catalogomobile.Fragments.FragListarProdutos">
+
+    <!-- Search Widget -->
+    <item
+        android:id="@+id/menu_search_campanha"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="0"
+        android:title="@string/action_procurar"
+        appcompat:actionViewClass="android.support.v7.widget.SearchView"
+        appcompat:showAsAction="always" />
+
+    <item
+        android:id="@+id/add_itens_campanha"
+        android:icon="@drawable/add_produto_campanha"
+        android:title="Incluir"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/salvar_campanha"
+        android:icon="@drawable/menu_salvar"
+        android:title="Salvar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cancelar_salvar_campanha"
+        android:icon="@drawable/menu_cancelar"
+        android:title="Cancelar"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

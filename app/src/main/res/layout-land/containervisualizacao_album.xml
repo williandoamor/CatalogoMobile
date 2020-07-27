@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparente"
+    tools:context=".views.ContainerViewAlbum">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main_album"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inc_tb_bottom_album"
+        android:layout_below="@+id/tb_main_album"
+        android:background="@color/transparente"
+        android:layout_marginTop="50dp"></android.support.v4.view.ViewPager>
+
+
+    <include
+        android:id="@+id/inc_tb_bottom_album"
+        layout="@layout/toolbar_bottom" />
+
+
+</RelativeLayout>
+

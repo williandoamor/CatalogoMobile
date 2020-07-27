@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/branco"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/cabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/branco"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_main_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <!--
+        app:popupTheme="@style/Toolbar_Popup"
+        app:theme="@style/AppBaseTheme" />
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rodape"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/desenvolvedor"
+            android:textColor="@color/branco"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Texview nome do usuario -->
+    <TextView
+        android:id="@+id/textUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cabecalho"
+        android:layout_centerHorizontal="true"
+        android:width="80dp"
+        android:text="@string/usuario"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+
+    <!-- EditText nome do usuario -->
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textCursorDrawable="@drawable/text_cursor" />
+
+    <!-- TextView senha do usuario -->
+    <TextView
+        android:id="@+id/textSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dip"
+        android:width="80dp"
+        android:text="@string/senha"
+        android:textSize="18sp"
+
+        android:textStyle="bold" />
+
+    <!--Senha do usuario -->
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@drawable/text_cursor" />
+
+    <LinearLayout
+        android:id="@+id/layLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSenha"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/layLogin"
+        android:layout_alignRight="@+id/layLogin"
+        android:layout_below="@+id/edtSenha"
+        android:background="@null"
+        android:drawableTop="@drawable/btn_login"
+        android:text="@string/acessar"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btCancelar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSenha"
+        android:layout_toEndOf="@+id/textUsuario"
+        android:layout_toRightOf="@+id/textUsuario"
+        android:background="@null"
+        android:drawableTop="@drawable/btn_off"
+        android:text="@string/cancelar"
+        android:textStyle="bold" />
+
+</RelativeLayout>

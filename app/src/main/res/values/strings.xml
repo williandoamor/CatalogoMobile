@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">CatalogoMobile</string>
+    <string name="action_settings">Configurar</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="action_second_activity">SecondActivity</string>
+    <string name="action_facebook">Facebook</string>
+    <string name="action_youtube">YouTube</string>
+    <string name="action_google_plus">Google Plus</string>
+    <string name="action_linkedin">LinkedIn</string>
+    <string name="action_whatsapp">WhatsApp</string>
+    <string name="action_procurar">Buscar produto</string>
+    <string name="search_result">Search Result!</string>
+    <string name="search_hint">Type and Search</string>
+    <string name="menu_search">Search</string>
+    <string name="host">Host</string>
+    <string name="porta_host">Porta</string>
+    <string name="tabela_padrao">Tabela padrão: </string>
+    <string name="casaDecimalPreco">Casas decimais para preço: </string>
+    <string name="exibir_preco_venda">Exibir preço de venda.</string>
+    <string name="vizualizar_imagem">Visualização: </string>
+
+    <!-- Mensagem para Alerdiaglo -->
+    <string name="informação">Informaçao.</string>
+    <string name="registroAtualizado">Informação atualizada com sucesso!</string>
+    <string name="confirmaSalvar">Confirma gravação do registro?</string>
+    <string name="sair_sem_salvar">Deseja realmente sair sem salvar?</string>
+    <string name="campanha">Campanha padrão: </string>
+    <string name="nome_campanha">Nome da campanha</string>
+
+    <string name="btnvoltar">Deseja realmente sair sem salvar? </string>
+    <string name="cadastroCampanha">Cadastro de Campanha</string>
+    <string name="selecionarprodutoscampanha">Selecione os produtos da campanha</string>
+
+    <string name="incluirItem">Alterar</string>
+    <string name="excluirItem">Excluir</string>
+
+    <string name="nome_usuario">nome</string>
+    <string name="dataCadUser">Data Cad:</string>
+    <string name="loginUser">Login: </string>
+    <string name="senha">Senha: </string>
+    <string name="confirmaSenha">Confirma Senha: </string>
+    <string name="perfilUser">Perfil: </string>
+    <string name="inativaUser">Inativo. </string>
+    <string name="telaLogin">CatalogoMobile - Login do Sistema</string>
+
+    <string name="usuario">Usuário</string>
+    <string name="desenvolvedor">Catalogo Mobile 1.0 - Desenvolvido por LoadTI. Três Pontas - MG - Contato: (35)9 9932-6903</string>
+    <string name="acessar">Acessar</string>
+    <string name="cancelar">Cancelar</string>
+
+</resources>
